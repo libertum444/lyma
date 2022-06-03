@@ -1,0 +1,72 @@
+/* root */
+:root {
+	/* nav */
+	--nav-link-color: rgba(0, 0, 0, 0.3);
+	--nav-link-hover: rgba(0, 0, 0, 0.7);
+	--buy-btn-color: rgb(255, 255, 255);
+	--buy-btn-hover: rgb(0, 0, 0);
+	--buy-btn-back: rgb(0, 0, 0);
+	--buy-btn-bg-hover: rgb(255, 255, 255);
+	--buy-btn-border: rgb(0, 0, 0);
+}
+
+/* document */
+.wrapper {
+	max-width: 1440px;
+}
+
+/* header */
+.header {
+	width: 100%;
+	padding: 20px 80px;
+	position: fixed;
+}
+
+.header-menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+
+.nav {
+	align-items: center;
+	display: flex;
+	gap: 30px;
+}
+
+.nav__link {
+	font-size: 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: var(--nav-link-color);
+	transition: 0.4s;
+}
+
+.nav__link:hover {
+	color: var(--nav-link-hover);
+}
+
+.buy-btn {
+	border: 1px solid var(--buy-btn-border);
+	padding: 5px 18px;
+	font-size: 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: var(--buy-btn-color);
+	background-color: var(--buy-btn-back);
+	transition: 0.4s all;
+}
+
+.buy-btn:hover {
+	background-color: var(--buy-btn-bg-hover);
+	color: var(--buy-btn-hover);
+}
+
+.logo {
+	width: 98px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
